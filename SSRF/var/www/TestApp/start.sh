@@ -1,5 +1,5 @@
 #!/bin/bash
-app="docker.test"
+app="docker.ssrf"
 docker build -t ${app} .
 docker run -d -p 56733:80 \
   --name=${app} \
