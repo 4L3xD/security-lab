@@ -12,15 +12,22 @@ ___
 ___
 
 ## Como executar este projeto
-**Criar imagem e executar o container:**
-```sudo bash start.sh```
+Este repositório contém diretórios nomeados com vulnerabilidades, sendo cada diretório um laboratório.
 
-#### Listar containers
-```docker ps -l```
+Para executar o laboratório da vulnerabilidade SSRF, _por exemplo_, é necessário:
 
-#### Parar container e deletar imagem
-```sudo bash stop.sh```
+1. Entrar na raíz do projeto:
+`cd SSRF/var/www/TestApp`
 
+2. Executar o arquivo bash que faz build da imagem e executa o container docker:
+`sudo bash start.sh`
 
-#### Atualiza alterações de script no servidor 
+3. Listar containers:
+`docker ps -l`
+
+Ao finalizar os estudos da vulnerabilidade em questão você pode parar o container e deletar a imagem do mesmo:
+```sudo bash stop.sh```.
+
+### Comandos úteis
+**Atualiza alterações de script no servidor** 
 ```sudo touch uwsgi.ini```
