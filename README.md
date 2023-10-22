@@ -34,3 +34,8 @@ sudo bash stop.sh
 ### Comandos úteis
 **Atualiza alterações de script no servidor:** 
 ```sudo touch uwsgi.ini```
+
+___
+#### Direitos
+[GNU GNU General Public License v3.0](/LICENSE.md)
+___
