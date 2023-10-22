@@ -6,17 +6,16 @@ TO DO: Descrever como executar e utilizar o projeto.
 
 - https://docs.boostsecurity.io/rules/code-ssrf.html
 
-# Atualiza alterações de script para o cliente 
-`sudo touch uwsgi.ini`
 
-# Comandos
-`docker ps -la`
-`docker stop <container_ID>`
-`docker rm <container_ID>`
-`docker image rm docker.test`
-
-# Criar imagem e executa o container
+# Criar imagem e executar o container
 `sudo bash start.sh`
 
-# Start container
-`docker start docker.test`
+# Listar containers
+`docker ps -l`
+
+# Parar container e deletar imagem
+`sudo bash stop.sh`
+
+
+# Atualiza alterações de script no servidor 
+`sudo touch uwsgi.ini`
