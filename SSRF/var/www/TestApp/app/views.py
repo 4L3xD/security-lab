@@ -4,23 +4,18 @@ from app import app
 
 @app.route('/')
 def home():
-    return "<b>Página inicial</b>"
+    return render_template("home.html")
 
 
-@app.route('/template')
-def template():
-    return render_template('home.html')
-
-
-@app.route("/service_status/<service_name>") # Internal Server Error
-def get_service_status(service_name):
+@app.route("/param/<param_name>")
+def param_vuln(param_name):
     # BAD:
     # user-controlled parameters can allow an attacker to
     # to send malicious requests to internal resources
     # or other external applications
     
     # EX: localhost:56733/service_status/google.com
-    return redirect(f"https://{service_name}.com")
+    return redirect(f"https://{param_name}.com")
 
     # GOOD:
     # It is highly recommend to use a whitelist approach
@@ -33,8 +28,8 @@ def get_service_status(service_name):
     #     return requests.get("https://defaultservice.com/defaultrequest")
 
 
-@app.route("/full_ssrf")
-def full_ssrf():
+@app.route("/args")
+def arg_vuln():
     target = request.args["target"]
 
     # BAD: user has full control of URL
