@@ -19,7 +19,7 @@ def get_service_status(service_name):
     # to send malicious requests to internal resources
     # or other external applications
     
-    # EX: http://localhost:56733/service_status/google.com
+    # EX: localhost:56733/service_status/google.com
     return redirect(f"https://{service_name}.com")
 
     # GOOD:
@@ -38,7 +38,7 @@ def full_ssrf():
     target = request.args["target"]
 
     # BAD: user has full control of URL
-    # EX: http://localhost:56733/full_ssrf?target=google.com?
+    # EX: localhost:56733/full_ssrf?target=google.com?
     return redirect(f"https://{target}.example.com/data/")
 
     # # GOOD: `subdomain` is controlled by the server.
