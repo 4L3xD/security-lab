@@ -1,3 +1,7 @@
+### Softwares desatualizados
+- Python;
+- Flask;
+
 ### Server Information Disclosure 
 - **Endpoint:** localhost:56733/static
 
