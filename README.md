@@ -13,7 +13,7 @@ ___
 
 ## Como executar este projeto
 **Criar imagem e executar o container:**
-> sudo bash start.sh
+```sudo bash start.sh```
 
 #### Listar containers
 ```docker ps -l```
