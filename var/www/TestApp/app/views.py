@@ -1,11 +1,10 @@
-from flask import render_template
+from flask import render_template, redirect
 from flask import request
 from app import app
-from urllib import request
 
 @app.route('/')
 def home():
-    return "<b>There has been a change</b>"
+    return "<b>Página inicial</b>"
 
 
 @app.route('/template')
@@ -19,7 +18,7 @@ def get_service_status(service_name):
     # user-controlled parameters can allow an attacker to
     # to send malicious requests to internal resources
     # or other external applications
-    return request.urlopen(service_name)
+    return redirect(f"https://{service_name}.com")
 
     # GOOD:
     # It is highly recommend to use a whitelist approach
@@ -38,7 +37,7 @@ def full_ssrf():
 
     # BAD: user has full control of URL
     ## http://localhost:56733/full_ssrf?target=evil.com#
-    return request.urlopen("https://" + target + ".example.com/data/")
+    return redirect(f"https://{target}.example.com/data/")
 
     # # GOOD: `subdomain` is controlled by the server.
     # subdomain = "europe" if target == "EU" else "world"
