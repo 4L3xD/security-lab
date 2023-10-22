@@ -37,5 +37,5 @@ sudo bash stop.sh
 
 ___
 #### Direitos
-[GNU GNU General Public License v3.0](/LICENSE.md)
+[GNU GNU General Public License v3.0](/LICENSE)
 ___
