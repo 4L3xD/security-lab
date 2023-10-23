@@ -25,9 +25,9 @@ ___
 - **Endpoint:** localhost:56733/static
 
 ### SSRF
-1. **Endpoint:** localhost:56733/service_status/<backdoor>
+1. **Endpoint:** localhost:56733/param/<backdoor>
 
-2. **Endpoint:** localhost:56733/full_ssrf?target=<backdoor>?
+2. **Endpoint:** localhost:56733/args?target=<backdoor>?
 
 ___
 ## 🏗️ Referências para a construção deste lab
