@@ -23,12 +23,12 @@ cd SSRF/var/www/TestApp
 
 2. Executar o arquivo bash que faz build da imagem, executa e lista os containers docker:
 ```bash
-sudo bash start.sh && docker ps -l
+bash start.sh && docker ps -l
 ```
 
 Ao finalizar os estudos da vulnerabilidade em questão você pode parar o container e deletar a imagem do mesmo:
 ```bash
-sudo bash stop.sh
+bash stop.sh
 ```
 
 ### Comandos úteis
