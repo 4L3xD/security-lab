@@ -26,6 +26,10 @@ cd SSRF/var/www/TestApp
 bash start.sh && docker ps -l
 ```
 
+3. Abrir a aplicação no navegador:
+[http://localhost:56733/](http://localhost:56733/)
+
+
 Ao finalizar os estudos da vulnerabilidade em questão você pode parar o container e deletar a imagem do mesmo:
 ```bash
 bash stop.sh
