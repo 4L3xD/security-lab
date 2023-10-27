@@ -27,7 +27,7 @@ ___
 ### SSRF
 1. **Endpoint:** localhost:56733/param/backdoor
 
-### Open Redirect Bypass
+#### Open Redirect Bypass
 2. **Endpoint:** localhost:56733/args?target=backdoor?
 
 ___
