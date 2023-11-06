@@ -10,6 +10,7 @@ ___
 [Mitre](https://cwe.mitre.org/data/definitions/918.html)
 
 [OWASP](https://owasp.org/www-community/attacks/Server_Side_Request_Forgery)
+[OWASP - SSRF Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet.html)
 
 [Portswigger Academy](https://portswigger.net/web-security/ssrf)
 
